@@ -19,18 +19,15 @@ An **Ubuntu EC2 instance** was used as the Ansible control server.
 
 ## 📂 Project Structure
 
-
-.
 ├── ec2.tf
 ├── securitygrp.tf
 ├── provider.tf
 ├── ansibleconfig
 ├── inventory.ini
 ├── target/
-│ └── LoginWebApp.war
+│   └── LoginWebApp.war
 └── images/
-└── architecture.png
-
+    └── architecture.png
 
 ---
 
