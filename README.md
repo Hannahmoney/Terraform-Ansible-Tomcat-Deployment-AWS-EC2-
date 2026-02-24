@@ -1,5 +1,3 @@
-Now copy this entire block:
-
 # 🚀 Terraform + Ansible Tomcat Deployment (AWS EC2)
 
 This project provisions infrastructure using **Terraform** and configures a Tomcat application using **Ansible**.
