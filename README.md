@@ -17,6 +17,23 @@ An **Ubuntu EC2 instance** was used as the Ansible control server.
 
 ---
 
+## 📂 Project Structure
+
+
+.
+├── ec2.tf
+├── securitygrp.tf
+├── provider.tf
+├── ansibleconfig
+├── inventory.ini
+├── target/
+│ └── LoginWebApp.war
+└── images/
+└── architecture.png
+
+
+---
+
 ## ⚙️ Prerequisites (Control Server - Ubuntu)
 
 The following tools were installed on the Ubuntu control server:
