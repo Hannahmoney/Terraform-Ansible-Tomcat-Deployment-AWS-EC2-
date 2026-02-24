@@ -54,9 +54,11 @@ To allow the Ansible controller to connect to the newly created EC2 instance:
 
 ```bash
 ssh-keygen
+```
 Copy public key to the target EC2 instance:
+```bash
 ssh-copy-id ec2-user@<EC2_PUBLIC_IP>
-
+```
 Or manually append the public key to:
 
 ~/.ssh/authorized_keys
@@ -67,9 +69,11 @@ This enables passwordless SSH access for Ansible.
 
 🚀 Deployment Steps
 1️⃣ Provision Infrastructure
+
+```bash
 terraform init
 terraform apply
-
+```
 This creates:
 
 EC2 instance
@@ -85,8 +89,9 @@ Example inventory structure:
 [web]
 <EC2_PUBLIC_IP> ansible_user=ec2-user
 3️⃣ Run Ansible Playbook
+```bash
 ansible-playbook -i inventory.ini ansibleconfig
-
+```
 This will:
 
 Install Java
@@ -100,8 +105,9 @@ Start Tomcat
 4️⃣ Access the Application
 
 Open in browser:
-
+```bash
 http://<EC2_PUBLIC_IP>:8080/LoginWebApp
+```
 🧠 Concepts Demonstrated
 
 Infrastructure as Code (IaC)
